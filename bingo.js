@@ -11,7 +11,6 @@ var Bingo = {
     // and coloum rows diagonals for tracking
     //
     //
-    this.numbers = [];
     this.hasPayload = true;
     this.SIZE = 5;
     this.index = {};
@@ -76,18 +75,13 @@ var Bingo = {
   },
 
   play: function(input) {
-    //check if number exists and get its position
-    //from index
-    //
-    this.numbers.push(input);
+    //check if number exists and get its position from index
     var position = this.index[input];
     //if exist
     if(position) {
       //record position
-      //
       this.record(position,input);
       //check if we have row coloum or diagonal
-      //
       return this.checkForWin();
     }
   }
