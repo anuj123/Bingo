@@ -7,9 +7,9 @@ var client = socketClient.connect('ws://yahoobingo.herokuapp.com');
 
 
 var payload = {
-  name: 'test',
-  email: 'test@yahoo-inc.com',
-  url: 'https://test.com'
+  name: 'Anuj Thapliyal',
+  email: 'contact@anujthapliyal.com',
+  url: 'https://github.com/anuj123/Bingo'
 }
 
 client.emit('register', payload)

@@ -85,12 +85,9 @@ var Bingo = {
     if(position) {
       //record position
       //
-      console.log("Position " + position);
-      console.log("Input " + input);
       this.record(position,input);
       //check if we have row coloum or diagonal
       //
-      console.log(this);
       return this.checkForWin();
     }
   }
